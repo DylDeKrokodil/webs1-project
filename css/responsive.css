@@ -1,1 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* responsive menu */
+@media screen and (max-width: 650px) {
+  .flex-col {
+    flex-direction: column;
+  }
+  .primary-navigation {
+    margin-left: 0px;
+  }
+  .nav-list {
+    margin-top: .5rem;
+  }
+}
