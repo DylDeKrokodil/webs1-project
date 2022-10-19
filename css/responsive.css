@@ -10,5 +10,9 @@
   }
   .nav-list {
     margin-top: .5rem;
+    text-align: center;
+  }
+  .hamburger {
+    right: 1rem;
   }
 }

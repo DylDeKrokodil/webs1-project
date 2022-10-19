@@ -29,23 +29,6 @@
     --fs-body: var(--fs-400);
     --fs-nav: var(--fs-300);
 }
-@media (min-width: 50em){
-    :root {
-        --fs-300: 1rem;
-        --fs-350: 1.25rem;
-        --fs-400: 1.4rem;
-        --fs-500: 1.6rem;
-        --fs-600: 2.4rem;
-        --fs-625: 3rem;
-        --fs-650: 3.2rem;
-        --fs-700: 3.4rem;
-        --fs-800: 8rem;
-        --fs-900: 11.6rem;
-
-        --fs-body: var(--fs-400);
-        --fs-nav: var(--fs-300);
-    }
-}
 
 /* Utility */
 
@@ -89,9 +72,7 @@
 .fw-regular {
     font-weight: var(--fw-regular);
 }
-* {
-    /* font-size: var(--fs-300); */
-}
+
 body {
     font-family: var(--ff-body);
     font-size: var(--fs-body);
@@ -131,6 +112,7 @@ ul {
 .nav-container a > img {
     height: 60px;
 }
+
 .text-center {
     text-align: center;
 }
@@ -145,6 +127,18 @@ ul {
 }
 .primary-navigation {
     margin-left: 2rem;
+}
+.grid {
+    display: grid;
+}
+.grid-col-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+.absolute {
+    position: absolute;
+}
+.d-none {
+    display: none;
 }
 
 
