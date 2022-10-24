@@ -119,14 +119,17 @@ ul {
 .align-items-center {
     align-items: center;
 }
+.absolute {
+    position: absolute;
+}
+.d-none {
+    display: none;
+}
 .uppercase {
     text-transform: uppercase;
 }
 .gap-small {
     gap: 1rem;
-}
-.primary-navigation {
-    margin-left: 2rem;
 }
 .grid {
     display: grid;
@@ -134,11 +137,11 @@ ul {
 .grid-col-2 {
     grid-template-columns: repeat(2, 1fr);
 }
-.absolute {
-    position: absolute;
+
+.primary-navigation {
+    margin-left: 2rem;
 }
-.d-none {
+
+.hamburger {
     display: none;
 }
-
-

@@ -2,6 +2,9 @@
 
 /* responsive menu */
 @media screen and (max-width: 650px) {
+  .grid-none-sm {
+    grid-template-columns: none;
+  }
   .flex-col {
     flex-direction: column;
   }
@@ -13,6 +16,18 @@
     text-align: center;
   }
   .hamburger {
+    display: block;
     right: 1rem;
+    top: 0;
   }
+  .nav-container .primary-navigation {
+    display: none;
+  }
+  
+  /* check if clicked on hamburger */
+  #checkbox_toggle:checked ~ .nav-container .primary-navigation {
+    display: block;
+  }
+
+
 }
