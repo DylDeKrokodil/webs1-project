@@ -20,12 +20,12 @@
     right: 1rem;
     top: 0;
   }
-  .nav-container .primary-navigation {
+  .container-s .primary-navigation {
     display: none;
   }
   
   /* check if clicked on hamburger */
-  #checkbox_toggle:checked ~ .nav-container .primary-navigation {
+  #checkbox_toggle:checked ~ .container-s .primary-navigation {
     display: block;
   }
 

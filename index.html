@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="#">
+    <link rel="icon" href="/img/dyldekrokodil_logo.png">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -11,11 +11,11 @@
     <title>Dylan de Groot</title>
 </head>
 <body>
-    <header class="primary-header bg-neutral-850">
+    <header class="primary-header bg-neutral-850 sticky">
         <input type="checkbox" class="d-none" id="checkbox_toggle">
         <label for="checkbox_toggle" class="hamburger absolute text-neutral-100">&#9776;</label>
-        <div class="nav-container flex align-items-center | flex-col">
-            <a href="#"><img src="#" alt="Logo"></a>
+        <div class="container-s flex align-items-center | flex-col">
+            <a href="#"><img src="/img/dyldekrokodil_logo.png" alt="Logo"></a>
             <nav class="primary-navigation text-neutral-100">
                 <ul role="list" class="nav-list flex gap-small uppercase | flex-col">
                     <li><a href="#">Hobbies</a></li>
@@ -26,19 +26,57 @@
             </nav>
         </div>
     </header>
-    <main style="height: 400px;">
+    <main>
         <div class="container">
-            <h1>Who am I?</h1>
-            <div class="grid grid-col-2 | grid-none-sm">
-                <div>content</div>
-                <div>content</div>
+            <h1 class="text-center mt-1">About Me</h1>
+            <div class="grid grid-col-2 gap-small mt-2 | grid-none-sm">
+                <div>
+                    <h2>Intro</h2>
+                    <p>Hello! Welcome to my website about, well, me obviously. I have to create a website using pure HTML and CSS. I know what you're thinking, we all know websites with JavaScript are 100 times better. So many more possibilities.</p>
+                </div>
+                <div class="flex justify-content-center"><img class="resize-m" src="img/nerfbattle.jpg" alt="Nerfbattle"></div>
             </div>
-        </div>
-        
+            <div class="grid grid-col-2 gap-small mt-2 | grid-none-sm">
+                <div class="flex justify-content-center"><img class="resize-m" src="img/nerfbattle.jpg" alt="Nerfbattle"></div>
+    
+                <div>
+                    <h2>Intro</h2>
+                    <p>Hello! Welcome to my website about, well, me obviously. I have to create a website using pure HTML and CSS. I know what you're thinking, we all know websites with JavaScript are 100 times better. So many more possibilities.</p>
+                </div>
+            </div>
+        </div>        
     </main>
-    <footer class="bg-neutral-850 text-neutral-100">
-        <div class="container">
-            
+    <footer class="mt-2 bg-neutral-850 text-neutral-100 fs-300">
+        <div class="container-s">
+            <div class="grid grid-col-3 justify-items-center ">
+                <div>I am active on the following places
+                    <ul role="list" class="icon-list text-center fs-350">
+                        <li><a href="https://www.instagram.com/dylaaan______/"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/dylan.degroot.967"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/dylan-de-groot/"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://github.com/DylDeKrokodil"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+                <div>
+                    You can contact me by email or phone
+                    <ul role="list" class="text-center">
+                        <li><a href="tel:+31 (6) 82987401">+31 (6) 82987401</a></li>
+                        <li><a href="mailto:dylandegroot2003@gmail.com">dylandegroot2003@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="fs-350">Navigation</div>
+                    <nav class="secundairy-navigation text-neutral-100">
+                        <ul role="list" class="">
+                            <li><a href="#">Hobbies</a></li>
+                            <li><a href="#">Experiences</a></li>
+                            <li><a href="#">YoungOnes</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="text-center mt-1">&copy; 2022 | Dylan de Groot</div>
         </div>
     </footer>
 </body>
