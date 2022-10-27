@@ -7,6 +7,8 @@
     --clr-neutral-850: #181818;
     --clr-neutral-900: #000; 
 
+    --clr-secundairy-400: #cc8899;
+
     --ff-primary: Roboto, Arial;
 
     --ff-body: var(--ff-primary);
@@ -96,9 +98,18 @@ header {
 nav {
     font-size: var(--fs-nav);
 }
+header a,
+footer a {
+    color: var(--clr-neutral-100);
+}
 a {
     text-decoration: none;
-    color: var(--clr-neutral-100);
+    opacity: .8;
+    color: var(--clr-secundairy-400);
+}
+a:hover {
+    transition: all .3s ease-in-out;
+    opacity: 1;
 }
 ul {
     list-style: none;
@@ -140,11 +151,19 @@ h2 {
 .mt-2 {
     margin-top: 2rem;
 }
+.padding-block-1 {
+    padding-block: 1rem;
+}
+
 .icon-list > li {
     display: inline;
 }
 .image-col-2 > img {
     width: 400px;
+}
+.card > div img {
+    width: auto;
+    height: 500px;
 }
 .justify-items-center {
     justify-items: center;

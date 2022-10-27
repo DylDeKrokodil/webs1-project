@@ -2,8 +2,11 @@
 
 /* responsive menu */
 @media screen and (max-width: 650px) {
-  .grid-none-sm {
-    grid-template-columns: none;
+  .grid-col-1-sm {
+    grid-template-columns: 1fr;
+  }
+  .grid-col-2-sm {
+    grid-template-columns: repeat(2, 1fr);
   }
   .flex-col {
     flex-direction: column;
@@ -24,10 +27,19 @@
     display: none;
   }
   
-  /* check if clicked on hamburger */
+  /* check if clicked on hamburger > select nav when checked*/
   #checkbox_toggle:checked ~ .container-s .primary-navigation {
     display: block;
   }
 
+  /* span last grid column in footer */
+  footer .grid-col-2-sm > div:last-child {
+    grid-column: 1 / -1;
+  }
+
+  /* switch 3th and 4th item in grid */
+  #home .grid-col-1-sm > div:nth-child(3) {
+    order: 4;
+  }
 
 }
