@@ -36,7 +36,7 @@
                     <div class="grid grid-col-2 gap-small | grid-col-1-sm">
                         <div>
                             <label for="name">First name *</label>
-                            <input placeholder="Dylan" pattern="[A-Za-z]{1,16}" type="text" id="name" title="Name can only require letters" required>
+                            <input class="focus" placeholder="Dylan" pattern="[A-Za-z]{1,16}" type="text" id="name" title="Name can only require letters" required>
                         </div>
                         <div>
                             <label for="last_name">Last name *</label>
@@ -51,8 +51,9 @@
 
                     <label for="message">Message *</label>
                     <textarea name="message" id="message" rows="5" required></textarea>
-                    
-                    <input type="submit" value="Send" class="mt-1 btn-primary">
+                    <div class="flex justify-content-center">
+                        <input type="submit" value="Send" class="breathing mt-1 btn btn-primary">
+                    </div>
                 </form>
             </div>
         </div>

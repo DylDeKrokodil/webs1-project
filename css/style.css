@@ -245,13 +245,24 @@ textarea {
 textarea {
     resize: none;
 }
-.btn-primary {
-    background-color: var(--clr-accent-400);
-    color: var(--clr-neutral-100);
+.btn {
+    color: var(--clr-neutral-800);
+    background-color: var(--clr-neutral-200);
     padding: .5rem 1rem;
-    border: none;
+    border: 1px solid var(--clr-accent-400);
     cursor: pointer;
+
 }
+.btn-primary {
+    transition: all .3s ease-in-out;
+    width: 50%;
+}
+
+.btn-primary:hover {
+    color: var(--clr-neutral-100);
+    background-color: var(--clr-accent-400);
+}
+
 .card {
     border-radius: 10px;
     transition: all .3s ease-in-out;
@@ -267,6 +278,47 @@ textarea {
     border-radius: 20px;
     font-weight: var(--fw-semi-bold);
 }
+
+/* breathing effect */
+.breathing {
+    animation: breathing 1s ease-in-out infinite alternate;
+}
+@keyframes breathing {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+/* breathing focus animation on inputs*/
+input:focus {
+    animation: focus 1s ease-in-out infinite alternate;
+}   
+@keyframes focus {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(.9);
+    }
+}
+
+/* spinning animation */
+.primary-header div img:hover {
+    animation: spinning 1s linear infinite;
+}
+@keyframes spinning {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
 
 
 
