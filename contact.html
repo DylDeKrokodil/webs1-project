@@ -14,10 +14,10 @@
     <header class="primary-header bg-neutral-850 sticky">
         <input type="checkbox" class="d-none" id="checkbox_toggle">
         <label for="checkbox_toggle" class="hamburger absolute text-neutral-100">&#9776;</label>
-        <div class="container-s flex align-items-center | flex-col">
+        <div class="container-s flex align-items-center | flex-col-sm">
             <a href="index.html"><img src="/img/dyldekrokodil_logo.png" alt="Logo"></a>
             <nav class="primary-navigation text-neutral-100">
-                <ul role="list" class="nav-list flex gap-small uppercase | flex-col">
+                <ul role="list" class="nav-list flex gap-small uppercase | flex-col-sm">
                     <li><a href="hobbies.html">Hobbies</a></li>
                     <li><a href="experiences.html">Experiences</a></li>
                     <li><a href="youngones.html">YoungOnes</a></li>
@@ -26,20 +26,33 @@
             </nav>
         </div>
     </header>
-    <main id="home">
+    <main id="contact">
         <div class="container">
-            <h1 class="text-center mt-1">Contact</h1>
+            <h1 class="text-center fw-bold mt-1">Contact</h1>
             <p class="text-center">Just fill in this form to contact me and I'll reply to you within 2 days!</p>
             <div class="flex justify-content-center mt-1">
-                <form id="contact_form" style="width: 1200px" class=" bg-neutral-850 text-neutral-100">
-                    <div class="grid grid-col-2 gap-small">
-                        <input placeholder="First name..." type="text" name="name" id="name">
-                        <input placeholder="Last name..." type="text" name="name" id="name">
+                <form id="contact_form" class="padding-1 bg-neutral-850 text-neutral-100">
+                    <p class="fs-300 text-center">All the inputs labeled with * have to be filled in!</p>
+                    <div class="grid grid-col-2 gap-small | grid-col-1-sm">
+                        <div>
+                            <label for="name">First name *</label>
+                            <input placeholder="Dylan" pattern="[A-Za-z]{1,16}" type="text" id="name" title="Name can only require letters" required>
+                        </div>
+                        <div>
+                            <label for="last_name">Last name *</label>
+                            <input placeholder="de Groot" pattern="[A-Za-z\s]{1,26}" type="text" id="last_name" title="Last name can only require letters" required>
+                        </div>
                     </div>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message"></textarea>
+                    <label for="email">Email *</label>
+                    <input type="email" name="email" id="email" placeholder="dylandegroot2003@gmail.com" required>
+
+                    <label for="tel">Phone</label>
+                    <input type="tel" name="tel" id="tel" placeholder="+31 6 82987401">
+
+                    <label for="message">Message *</label>
+                    <textarea name="message" id="message" rows="5" required></textarea>
+                    
+                    <input type="submit" value="Send" class="mt-1 btn-primary">
                 </form>
             </div>
         </div>

@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-/* responsive menu */
 @media screen and (max-width: 650px) {
   .grid-col-1-sm {
     grid-template-columns: 1fr;
@@ -8,7 +7,7 @@
   .grid-col-2-sm {
     grid-template-columns: repeat(2, 1fr);
   }
-  .flex-col {
+  .flex-col-sm {
     flex-direction: column;
   }
   .primary-navigation {
@@ -40,6 +39,10 @@
   /* switch 3th and 4th item in grid */
   #home .grid-col-1-sm > div:nth-child(3) {
     order: 4;
+  }
+
+  .justify-content-center-sm {
+    justify-content: center;
   }
 
 }
