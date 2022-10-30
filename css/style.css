@@ -279,11 +279,6 @@ textarea {
     border-radius: 20px;
     font-weight: var(--fw-semi-bold);
 }
-.full-width {
-    width: 101vw;
-    margin-left: -55px;
-}
-
 
 /* breathing effect */
 .breathing {
